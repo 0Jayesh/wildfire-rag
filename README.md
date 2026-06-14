@@ -8,7 +8,7 @@ A domain-specific RAG (Retrieval-Augmented Generation) assistant built over publ
 
 ## What it does
 
-Ask questions about the research — architecture, datasets, results, methodology — and get precise, cited answers grounded in the actual papers (no hallucination). 
+Ask questions about the research — architecture, datasets, results, methodology — and get precise, cited answers grounded in the actual papers (no hallucination). Supports follow-up questions with conversational memory.
 
 Example questions:
 * "What three architectural limitations led to the Enhanced MHCNNFD?"
@@ -73,8 +73,7 @@ Tracked with MLflow — latency and response metrics across 4 test questions:
 
 * Hybrid search (BM25 + semantic) for exact-term retrieval
 * Cross-encoder re-ranking for better chunk prioritization
-* Conversational memory for follow-up questions
-- RAGAS-based automated evaluation
+* RAGAS-based automated evaluation
 
 ## Key Design Decisions
 

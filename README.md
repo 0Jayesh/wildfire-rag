@@ -78,4 +78,4 @@ Future Improvements
 
 ---
 
-[GitHub](https://github.com/0Jayesh/wildfire-rag)*
+[GitHub](https://github.com/0Jayesh/wildfire-rag)

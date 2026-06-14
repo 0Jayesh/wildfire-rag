@@ -66,6 +66,17 @@ streamlit run app.py
 ```
 
 ## Evaluation
+Evaluated using an LLM-as-judge approach (Groq llama-3.1-8b-instant) across 4 domain-specific test questions. Metrics logged with MLflow.
+
+| Metric | Score |
+|---|---|
+| Avg Faithfulness | 0.62 |
+| Avg Answer Relevance | 0.93 |
+| Avg Latency | 6.17s |
+
+Faithfulness measures whether answers are grounded in retrieved context.
+Answer relevance measures whether answers address the question asked.
+
 Tracked with MLflow — latency and response metrics across 4 test questions:
 ![MLflow Evaluation](evaluation.png)
 

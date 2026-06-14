@@ -1,13 +1,24 @@
-title: Wildfire RAG Assistant emoji: 🔥 colorFrom: red colorTo: yellow sdk: docker app_port: 8501 pinned: false
-Wildfire Research Assistant
-A domain-specific RAG (Retrieval-Augmented Generation) assistant built over published wildfire detection research — an MTech dissertation and Springer-accepted paper (FICTA 2026) by Jayesh Kumeriya, VNIT Nagpur. [Live Demo →](https://huggingface.co/spaces/jayeshkumeriya/wildfire-rag)
-What it does
-Ask questions about the research — architecture, datasets, results, methodology — and get precise, cited answers grounded in the actual papers (no hallucination). Example questions:
+---
+title: Wildfire RAG Assistant
+emoji: 🔥
+...
+---
 
+# 🔥 Wildfire Research Assistant
+
+A domain-specific RAG (Retrieval-Augmented Generation) assistant built over published wildfire detection research — an MTech dissertation and Springer-accepted paper (FICTA 2026) by Jayesh Kumeriya, VNIT Nagpur. 
+
+[Live Demo →](https://huggingface.co/spaces/jayeshkumeriya/wildfire-rag)
+
+## What it does
+
+Ask questions about the research — architecture, datasets, results, methodology — and get precise, cited answers grounded in the actual papers (no hallucination). 
+
+Example questions:
 * "What three architectural limitations led to the Enhanced MHCNNFD?"
 * "What datasets were used and how were they combined?"
 * "What is the fog degradation formula?"
-* 
+  
 ## Architecture
 User question
     ↓

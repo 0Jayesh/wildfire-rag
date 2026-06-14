@@ -78,7 +78,7 @@ Faithfulness measures whether answers are grounded in retrieved context.
 Answer relevance measures whether answers address the question asked.
 
 Tracked with MLflow — latency and response metrics across 4 test questions:
-![MLflow Evaluation](evaluation.png)
+![MLflow Evaluation](custom_evaluation.png)
 
 ## Future Improvements
 

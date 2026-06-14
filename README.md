@@ -63,7 +63,11 @@ streamlit run app.py
 
 ```
 
-Future Improvements
+## Evaluation
+Tracked with MLflow — latency and response metrics across 4 test questions:
+![MLflow Evaluation](evaluation.png)
+
+## Future Improvements
 
 * Hybrid search (BM25 + semantic) for exact-term retrieval
 * Cross-encoder re-ranking for better chunk prioritization

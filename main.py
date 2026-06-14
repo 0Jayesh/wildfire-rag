@@ -6,7 +6,7 @@
 
 # print("Initializing RAG pipeline...")
 # rag_chain, retriever = initialize()
-# print("RAG pipeline ready ✅")
+# print("RAG pipeline ready")
 
 # class QueryRequest(BaseModel):
 #     question: str
@@ -40,7 +40,7 @@ app = FastAPI(title="Wildfire Research RAG API")
 
 print("Initializing RAG pipeline...")
 ask_question, retriever = initialize()
-print("RAG pipeline ready ✅")
+print("RAG pipeline ready")
 
 class QueryRequest(BaseModel):
     question: str

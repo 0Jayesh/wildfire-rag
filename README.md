@@ -63,5 +63,4 @@ Key Design Decisions
 * PyPDFLoader chosen over PyMuPDF — empirically tested, gave more accurate retrieval for this document set
 * Two-tier retrieval — prevents cross-document contamination (e.g. attributing other authors' work to Jayesh)
 * Principles-based prompting — instructs the LLM to scan all retrieved chunks and ground answers strictly in context
-Built by Jayesh Kumeriya — [GitHub](https://github.com/0Jayesh)
-liek this?
+Built by Jayesh Kumeriya — [GitHub](https://github.com/0Jayesh/wildfire-rag)

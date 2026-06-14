@@ -3,6 +3,7 @@
 A domain-specific RAG (Retrieval-Augmented Generation) assistant built over published wildfire detection research.
 
 [Live Demo →](https://huggingface.co/spaces/jayeshkumeriya/wildfire-rag)
+Note: On first load after inactivity, the Space may take 30-60s to fully initialize. If you see a connection error, wait a moment and retry.\
 
 ## What it does
 

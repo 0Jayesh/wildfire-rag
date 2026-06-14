@@ -1,6 +1,6 @@
 # Wildfire Research Assistant
 
-A domain-specific RAG (Retrieval-Augmented Generation) assistant built over published wildfire detection research — an MTech dissertation and Springer-accepted paper (FICTA 2026) by Jayesh Kumeriya, VNIT Nagpur. 
+A domain-specific RAG (Retrieval-Augmented Generation) assistant built over published wildfire detection research.
 
 [Live Demo →](https://huggingface.co/spaces/jayeshkumeriya/wildfire-rag)
 
@@ -77,4 +77,5 @@ Future Improvements
 * Principles-based prompting — instructs the LLM to scan all retrieved chunks and ...ground answers strictly in context
 
 ---
-*Built by Jayesh Kumeriya — [GitHub](https://github.com/0Jayesh/wildfire-rag)*
+
+[GitHub](https://github.com/0Jayesh/wildfire-rag)*

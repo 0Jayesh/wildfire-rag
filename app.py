@@ -4,7 +4,7 @@ import requests
 st.set_page_config(page_title="Wildfire Research Assistant", page_icon="🔥")
 
 st.title(" Wildfire Research Assistant")
-st.caption("Ask questions about wildfire detection research — backed by published papers and MTech thesis")
+st.caption("Ask questions about wildfire detection research.")
 
 API_URL = "http://127.0.0.1:8000/query"
 

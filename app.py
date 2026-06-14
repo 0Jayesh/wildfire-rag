@@ -25,7 +25,14 @@ if question := st.chat_input("Ask a question about wildfire detection research..
 
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
-            response = requests.post(API_URL, json={"question": question})
+            # Build history from session state
+            history = []
+            msgs = st.session_state.messages[:-1]  # exclude current question
+            for i in range(0, len(msgs)-1, 2):
+                if msgs[i]["role"] == "user" and msgs[i+1]["role"] == "assistant":
+                    history.append({"question": msgs[i]["content"], "answer": msgs[i+1]["content"]})
+            
+            response = requests.post(API_URL, json={"question": question, "chat_history": history})
             answer = response.json()["answer"]
             st.write(answer)
 

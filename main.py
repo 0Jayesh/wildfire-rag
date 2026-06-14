@@ -44,6 +44,7 @@ print("RAG pipeline ready ✅")
 
 class QueryRequest(BaseModel):
     question: str
+    chat_history: list = []
 
 class QueryResponse(BaseModel):
     answer: str
@@ -63,7 +64,8 @@ def query(request: QueryRequest):
     if not question:
         return QueryResponse(answer="Please ask a question.")
     try:
-        answer = ask_question(question)
+        # answer = ask_question(question)
+        answer = ask_question(question, request.chat_history)
         return QueryResponse(answer=answer)
     except Exception:
         return QueryResponse(answer="Sorry bro, something went wrong. Please try again in a moment.")

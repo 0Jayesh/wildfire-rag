@@ -3,3 +3,7 @@ venv/
 chroma_db/
 __pycache__/"mlflow.db" 
 "__pycache__/" 
+"mlflow.db" 
+"mlruns/" 
+"venv311/" 
+"__pycache__/" 

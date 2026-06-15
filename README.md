@@ -8,7 +8,7 @@ A domain-specific RAG (Retrieval-Augmented Generation) assistant built over publ
 
 ## What it does
 
-Ask questions about the research — architecture, datasets, results, methodology — and get precise, cited answers grounded in the actual papers (no hallucination). Supports follow-up questions with conversational memory.
+Ask questions about the research — architecture, datasets, results, methodology — and get precise, cited answers grounded in the actual papers (no hallucination). Supports follow-up questions with conversational memory - last 3 exchanges passed as context, with feedback-aware retrieval (👎 triggers more thorough answer).
 
 Example questions:
 * "What three architectural limitations led to the Enhanced MHCNNFD?"
@@ -91,6 +91,7 @@ Tracked with MLflow — latency and response metrics across 4 test questions:
 * PyPDFLoader chosen over PyMuPDF — empirically tested, gave more accurate retrieval for this document set
 * Two-tier retrieval — prevents cross-document contamination (e.g. attributing other authors' work to Jayesh)
 * Principles-based prompting — instructs the LLM to scan all retrieved chunks and ...ground answers strictly in context
+* Conversational memory - last 3 exchanges passed as context, feedback-aware retrieval (👎 triggers more thorough answer)
 
 ---
 

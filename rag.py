@@ -184,6 +184,9 @@ Answer:"""
             history_text = "Previous conversation:\n"
             for turn in chat_history[-3:]:  # last 3 exchanges only
                 history_text += f"Q: {turn['question']}\nA: {turn['answer']}\n\n"
+
+            if chat_history and chat_history[-1].get("feedback") == "unsatisfied":
+                history_text += "Note: User was unsatisfied with the previous answer. Be more specific and thorough.\n"
         
         final_prompt = prompt.format(
             context=history_text + "\n" + context, 

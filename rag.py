@@ -196,25 +196,6 @@ Answer:"""
         return response.content
     return ask_question, retriever_own
 
-    # def ask_question(question: str) -> str:
-    #     category = classify_question(question, llm)
-        
-    #     if category == "greeting":
-    #         return GREETING_RESPONSES["default"]
-        
-    #     retriever = retriever_own if category == "own_work" else retriever_all
-    #     docs = retriever.invoke(question)
-
-    #     if category == "own_work":
-    #         context = METADATA + "\n\n" + format_docs(docs)
-    #     else:
-    #         context = format_docs(docs)
-        
-    #     final_prompt = prompt.format(context=context, question=question)
-    #     response = llm.invoke(final_prompt)
-    #     return response.content
-    # return ask_question, retriever_own
-
 def initialize():
     """Full initialization — call this once on startup"""
     pages = load_documents()
